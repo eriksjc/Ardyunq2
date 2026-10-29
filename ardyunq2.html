@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир игр</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="ardyunq.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>МИР ИГР</h1>
+    <p>Интерактивный сайт на JavaScript</p>
+</header>
+
+<!-- МЕНЮ И ПОДМЕНЮ -->
+
+<nav id="menu"></nav>
+
+<main>
+
+    <section class="card">
+        <h2>Добро пожаловать!</h2>
+        <p>Изучай возможности сайта, используй меню, мышь и клавиатуру.</p>
+        <h3 id="message">Выбери пункт меню</h3>
+    </section>
+
+    <!-- ОБРАБОТКА МЫШИ -->
+
+    <section class="card">
+        <h2>Обработка мыши</h2>
+
+        <p>Проверь, как сайт реагирует на действия мыши.</p>
+
+        <button id="mouseButton" class="action-button">
+            Нажми меня
+        </button>
+
+        <button id="doubleButton" class="action-button">
+            Двойной клик
+        </button>
+
+        <p id="mouseMessage">Ожидание действия...</p>
+
+        <div id="mouseArea">
+            Наведи курсор сюда
+        </div>
+    </section>
+
+    <!-- МИНИ-ИГРА НА КЛАВИАТУРЕ -->
+
+    <section class="card game">
+        <h2>ПРОВЕРЬ СВОЮ РЕАКЦИЮ</h2>
+
+        <p>Нажимай клавиши, которые появляются на экране!</p>
+
+        <div id="targetKey">?</div>
+
+        <p id="gameMessage">
+            Нажми Enter, чтобы начать игру
+        </p>
+
+        <div class="statistics">
+            <div>
+                <p>ОЧКИ</p>
+                <span id="score">0</span>
+            </div>
+
+            <div>
+                <p>ОШИБКИ</p>
+                <span id="mistakes">0</span>
+            </div>
+        </div>
+
+        <button id="startGame" class="action-button">
+            Начать игру
+        </button>
+
+        <p class="hint">
+            Управление: A–Z | Enter — начать заново
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Учебный проект | HTML, CSS, JavaScript</p>
+</footer>
+
+</body>
+</html>
